@@ -1,0 +1,86 @@
+# .NET Core / ASP.NET Core
+bin/
+obj/
+out/
+
+# ASP.NET Scaffolding
+.scaffolding/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Log files
+*.log
+logs/
+
+# Application Insights
+*.ai.json
+
+# Local databases
+*.mdf
+*.ldf
+
+# Entity Framework
+*.sqlite
+*.sqlite3
+
+# AWS SDK credentials
+*.aws/*
+
+# Azure
+LocalSettings.json
+
+# Configuration files
+appsettings*.json
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+.vscode-test/
+
+# Visual Studio
+.vs/
+*.sln.ide
+*.sln.cache
+*.tfstate
+
+# Packages
+*.nupkg
+*.snupkg
+
+# NuGet
+*.nuget/
+
+# Build artefacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.so
+*.dylib
+*.class
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coverlet
+*.testsettings
+*.vsmdi
+*.testadapter.dll
+
+# Web configuration
+wwwroot/
+node_modules/
+
+# Tools
+tools/
+*.db
+*.bak
