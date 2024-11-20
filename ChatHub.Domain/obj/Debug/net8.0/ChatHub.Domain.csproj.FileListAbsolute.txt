@@ -9,3 +9,4 @@ F:\ChatHub\ChatHub\ChatHub.Domain\obj\Debug\net8.0\ChatHub.Domain.dll
 F:\ChatHub\ChatHub\ChatHub.Domain\obj\Debug\net8.0\refint\ChatHub.Domain.dll
 F:\ChatHub\ChatHub\ChatHub.Domain\obj\Debug\net8.0\ChatHub.Domain.pdb
 F:\ChatHub\ChatHub\ChatHub.Domain\obj\Debug\net8.0\ref\ChatHub.Domain.dll
+F:\ChatHub\ChatHub\ChatHub.Domain\obj\Debug\net8.0\ChatHub.Domain.sourcelink.json

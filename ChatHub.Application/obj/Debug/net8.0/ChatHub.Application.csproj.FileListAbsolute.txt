@@ -15,3 +15,4 @@ F:\ChatHub\ChatHub\ChatHub.Application\obj\Debug\net8.0\refint\ChatHub.Applicati
 F:\ChatHub\ChatHub\ChatHub.Application\obj\Debug\net8.0\ChatHub.Application.pdb
 F:\ChatHub\ChatHub\ChatHub.Application\obj\Debug\net8.0\ChatHub.Application.genruntimeconfig.cache
 F:\ChatHub\ChatHub\ChatHub.Application\obj\Debug\net8.0\ref\ChatHub.Application.dll
+F:\ChatHub\ChatHub\ChatHub.Application\obj\Debug\net8.0\ChatHub.Application.sourcelink.json

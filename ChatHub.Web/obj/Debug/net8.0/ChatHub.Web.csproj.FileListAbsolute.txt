@@ -99,3 +99,5 @@ F:\ChatHub\ChatHub\ChatHub.Web\obj\Debug\net8.0\refint\ChatHub.Web.dll
 F:\ChatHub\ChatHub\ChatHub.Web\obj\Debug\net8.0\ChatHub.Web.pdb
 F:\ChatHub\ChatHub\ChatHub.Web\obj\Debug\net8.0\ChatHub.Web.genruntimeconfig.cache
 F:\ChatHub\ChatHub\ChatHub.Web\obj\Debug\net8.0\ref\ChatHub.Web.dll
+F:\ChatHub\ChatHub\ChatHub.Web\obj\Debug\net8.0\ChatHub.Web.sourcelink.json
+F:\ChatHub\ChatHub\ChatHub.Web\obj\Debug\net8.0\ChatHub.Web.MvcApplicationPartsAssemblyInfo.cs

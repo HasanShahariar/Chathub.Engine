@@ -33,7 +33,7 @@ namespace ChatHub.Application.Features.ChatRecords.Queries
 
         public async Task<ListResult<ChatHistoryReturnDto>> Handle(GetChatHistoryQuery request, CancellationToken cancellationToken)
         {
-            var query = _context.ChatHistories.AsNoTracking();
+            var query = _context.ChatHistories.Where(c=>(c.SenderId==request.SenderId || c.SenderId==request.ReceiverId) && (c.ReceiverId==request.ReceiverId || c.ReceiverId == request.SenderId)).AsNoTracking();
 
          
 

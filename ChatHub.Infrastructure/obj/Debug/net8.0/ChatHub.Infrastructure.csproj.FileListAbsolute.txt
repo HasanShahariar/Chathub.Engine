@@ -17,3 +17,4 @@ F:\ChatHub\ChatHub\ChatHub.Infrastructure\obj\Debug\net8.0\refint\ChatHub.Infras
 F:\ChatHub\ChatHub\ChatHub.Infrastructure\obj\Debug\net8.0\ChatHub.Infrastructure.pdb
 F:\ChatHub\ChatHub\ChatHub.Infrastructure\obj\Debug\net8.0\ChatHub.Infrastructure.genruntimeconfig.cache
 F:\ChatHub\ChatHub\ChatHub.Infrastructure\obj\Debug\net8.0\ref\ChatHub.Infrastructure.dll
+F:\ChatHub\ChatHub\ChatHub.Infrastructure\obj\Debug\net8.0\ChatHub.Infrastructure.sourcelink.json
