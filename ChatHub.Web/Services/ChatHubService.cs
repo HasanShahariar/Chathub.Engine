@@ -50,7 +50,7 @@ public class ChatHubService : Hub
         else
         {
             // Optionally, handle the case where the recipient is not connected
-            await Clients.Caller.SendAsync("ReceiveMessage", "System", "Recipient not available.");
+            //await Clients.Caller.SendAsync("ReceiveMessage", "System", "Recipient not available.");
         }
     }
 

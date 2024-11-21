@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "F:\\ChatHub\\ChatHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|F:\\ChatHub\\ChatHub\\chathub.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|solutionrelative:chathub.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|F:\\ChatHub\\ChatHub\\chathub.web\\services\\chathubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|solutionrelative:chathub.web\\services\\chathubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|f:\\chathub\\chathub\\chathub.web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|f:\\chathub\\chathub\\chathub.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|solutionrelative:chathub.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|F:\\ChatHub\\ChatHub\\chathub.web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AF85B3B-FA7E-41B8-91B7-21CEC9D6004B}|ChatHub.Web\\ChatHub.Web.csproj|solutionrelative:chathub.web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1543,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -42,31 +42,30 @@
               "RelativeToolTip": "ChatHub.Web\\Controllers\\UsersController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T05:20:14.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T05:20:14.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ChatHubService.cs",
               "DocumentMoniker": "F:\\ChatHub\\ChatHub\\ChatHub.Web\\Services\\ChatHubService.cs",
               "RelativeDocumentMoniker": "ChatHub.Web\\Services\\ChatHubService.cs",
               "ToolTip": "F:\\ChatHub\\ChatHub\\ChatHub.Web\\Services\\ChatHubService.cs",
               "RelativeToolTip": "ChatHub.Web\\Services\\ChatHubService.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwCwAAABIAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwB0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T05:03:35.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\ChatHub\\ChatHub\\ChatHub.Web\\Program.cs",
               "RelativeDocumentMoniker": "ChatHub.Web\\Program.cs",
               "ToolTip": "F:\\ChatHub\\ChatHub\\ChatHub.Web\\Program.cs",
               "RelativeToolTip": "ChatHub.Web\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAADkAAAAjAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T04:52:53.884Z",
               "EditorCaption": ""
