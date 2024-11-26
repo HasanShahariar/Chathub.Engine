@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Linq;
+using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -45,7 +46,7 @@ public class ChatHubService : Hub
         if (userConnections.TryGetValue(receiverId .ToString(), out var connectionId))
         {
             // Send message to recipient
-            await Clients.Client(connectionId).SendAsync("ReceiveMessage", senderUsername, message);
+            await Clients.Client(connectionId).SendAsync("ReceiveMessage", senderId, message);
         }
         else
         {
@@ -67,10 +68,14 @@ public class ChatHubService : Hub
         if (!string.IsNullOrEmpty(userId))
         {
             userConnections[userId] = Context.ConnectionId;
+            await Clients.All.SendAsync("UserStatusChanged", userId, true);
+            await Clients.All.SendAsync("ReceiveActiveUsers", userConnections.Keys.ToList());
+
         }
         else
         {
-            await Clients.Caller.SendAsync("ReceiveMessage", "System", "User is not authenticated.");
+            //await Clients.Caller.SendAsync("ReceiveMessage", "System", "User is not authenticated.");
+          
         }
 
         await base.OnConnectedAsync();
@@ -81,10 +86,16 @@ public class ChatHubService : Hub
     // Handle when the user disconnects from the hub
     public override async Task OnDisconnectedAsync(Exception exception)
     {
-        var userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;  // Get user ID from JWT
+
+        //var userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+        var userId = GetUserId();
+
         if (!string.IsNullOrEmpty(userId) && userConnections.ContainsKey(userId))
         {
             userConnections.Remove(userId);  // Remove the user from the dictionary
+            await Clients.All.SendAsync("UserStatusChanged", userId, false);
+            await Clients.All.SendAsync("ReceiveActiveUsers", userConnections.Keys.ToList());
         }
         await base.OnDisconnectedAsync(exception);
     }
@@ -100,4 +111,24 @@ public class ChatHubService : Hub
         var UserName = jwtToken?.Claims?.FirstOrDefault(c => c.Type == "uName")?.Value; 
         return userId;
     }
+    public async Task GetActiveUsers()
+    {
+        var activeUsers = userConnections.Keys.ToList(); // Retrieve all user IDs
+        await Clients.Caller.SendAsync("ReceiveActiveUsers", activeUsers);
+    }
+    public async Task Logout()
+    {
+        var userId = GetUserId();
+
+        if (!string.IsNullOrEmpty(userId) && userConnections.ContainsKey(userId))
+        {
+            userConnections.Remove(userId); // Remove the user from the active connections
+            await Clients.All.SendAsync("UserStatusChanged", userId, false); // Notify clients of user logout
+
+            // Optionally, send the updated active users list to all clients
+            await Clients.All.SendAsync("ReceiveActiveUsers", userConnections.Keys.ToList());
+        }
+        await base.OnDisconnectedAsync(new Exception());
+    }
+
 }

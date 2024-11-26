@@ -1,4 +1,5 @@
 ﻿using ChatHub.Application.Features.Users.Commands;
+using ChatHub.Application.Features.Users.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Tailoring.Application.Com.Users.Queries.GetUsers;
@@ -25,6 +26,18 @@ public class UsersController : ApiControllerBase
     public async Task<IActionResult> GetAll([FromQuery] GetUsersQuery query)
     {
         return Ok(await Mediator.Send(query));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetById([FromQuery] GetUserByIdQuery query)
+    {
+        return Ok(await Mediator.Send(query));
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> UpdateUser([FromForm] UpdateUserCommand command)
+    {
+        return Ok(await Mediator.Send(command));
     }
 
 
