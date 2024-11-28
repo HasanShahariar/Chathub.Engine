@@ -67,9 +67,17 @@ public class ChatHubService : Hub
 
         if (!string.IsNullOrEmpty(userId))
         {
-            userConnections[userId] = Context.ConnectionId;
-            await Clients.All.SendAsync("UserStatusChanged", userId, true);
-            await Clients.All.SendAsync("ReceiveActiveUsers", userConnections.Keys.ToList());
+            try
+            {
+                userConnections[userId] = Context.ConnectionId;
+                await Clients.All.SendAsync("UserStatusChanged", userId, true);
+                await Clients.All.SendAsync("ReceiveActiveUsers", userConnections.Keys.ToList());
+            }
+            catch(Exception ex) 
+            {
+                throw new Exception("fdfd", ex);
+            }
+
 
         }
         else
