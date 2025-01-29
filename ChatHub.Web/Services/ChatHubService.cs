@@ -1,13 +1,9 @@
 ﻿using ChatHub.Application.Features.ChatRecords.Commands;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
-using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json.Linq;
-using System;
+
 using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 
 namespace ChatHub.Web.Services;
 
